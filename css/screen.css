@@ -1,0 +1,619 @@
+/*----- Variables -----*/
+/* line 8, ../scss/screen.scss */
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: arial "verdana" sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*---- Page Layout -----*/
+/* line 19, ../scss/screen.scss */
+html, body, .page {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 23, ../scss/screen.scss */
+.page {
+  padding-left: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 28, ../scss/screen.scss */
+.page-content {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 29, ../scss/screen.scss */
+.page-sidebar {
+  width: 200px;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/*---- Page Controls -----*/
+/* line 40, ../scss/screen.scss */
+input[type="radio"] {
+  display: none;
+}
+
+/* line 41, ../scss/screen.scss */
+.page-content .article {
+  display: none;
+}
+
+/* line 43, ../scss/screen.scss */
+#show-article1:checked ~ .page .article1 {
+  display: block;
+}
+
+/* line 44, ../scss/screen.scss */
+#show-article2:checked ~ .page .article2 {
+  display: block;
+}
+
+/* line 45, ../scss/screen.scss */
+#show-article3:checked ~ .page .article3 {
+  display: block;
+}
+
+/* line 46, ../scss/screen.scss */
+#show-article4:checked ~ .page .article4 {
+  display: block;
+}
+
+/* line 47, ../scss/screen.scss */
+#show-article5:checked ~ .page .article5 {
+  display: block;
+}
+
+/* line 48, ../scss/screen.scss */
+#show-article6:checked ~ .page .article6 {
+  display: block;
+}
+
+/* line 49, ../scss/screen.scss */
+#show-article7:checked ~ .page .article7 {
+  display: block;
+}
+
+/* line 50, ../scss/screen.scss */
+#show-article8:checked ~ .page .article8 {
+  display: block;
+}
+
+/* line 51, ../scss/screen.scss */
+#show-article9:checked ~ .page .article9 {
+  display: block;
+}
+
+/* line 52, ../scss/screen.scss */
+#show-article10:checked ~ .page .article10 {
+  display: block;
+}
+
+/* line 53, ../scss/screen.scss */
+#show-article11:checked ~ .page .article11 {
+  display: block;
+}
+
+/*---- // Page Controls -----*/
+/*---- Page Sidebar ----*/
+/* line 59, ../scss/screen.scss */
+.page-sidebar {
+  background: #72b4aa;
+}
+
+/* line 60, ../scss/screen.scss */
+.main-list {
+  list-style-type: none;
+  text-align: center;
+}
+
+/* line 64, ../scss/screen.scss */
+.main-list li {
+  width: 100%;
+  background-color: #72b4aa;
+}
+
+/* line 68, ../scss/screen.scss */
+.main-list li label {
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+  background-color: #72b4aa;
+  border: 1px solid transparent;
+  border-bottom-color: #68AD9D;
+  display: block;
+}
+
+/* line 77, ../scss/screen.scss */
+.main-list li:hover label {
+  cursor: pointer;
+}
+
+/* line 78, ../scss/screen.scss */
+.main-list li label:after {
+  content: '';
+  height: 100%;
+  width: 10px;
+  top: -1px;
+  right: 0;
+  background-color: #72b4aa;
+  position: absolute;
+  border: 1px solid transparent;
+  border-bottom-color: #68AD9D;
+  transition: all .3s ease-out;
+}
+
+/* line 91, ../scss/screen.scss */
+#show-article1:checked ~ .page .main-list li .label-after1:after {
+  right: -10px;
+}
+
+/* line 92, ../scss/screen.scss */
+#show-article2:checked ~ .page .main-list li .label-after2:after {
+  right: -10px;
+}
+
+/* line 93, ../scss/screen.scss */
+#show-article3:checked ~ .page .main-list li .label-after3:after {
+  right: -10px;
+}
+
+/* line 94, ../scss/screen.scss */
+#show-article4:checked ~ .page .main-list li .label-after4:after {
+  right: -10px;
+}
+
+/* line 95, ../scss/screen.scss */
+#show-article5:checked ~ .page .main-list li .label-after5:after {
+  right: -10px;
+}
+
+/* line 96, ../scss/screen.scss */
+#show-article6:checked ~ .page .main-list li .label-after6:after {
+  right: -10px;
+}
+
+/* line 97, ../scss/screen.scss */
+#show-article7:checked ~ .page .main-list li .label-after7:after {
+  right: -10px;
+}
+
+/* line 98, ../scss/screen.scss */
+#show-article8:checked ~ .page .main-list li .label-after8:after {
+  right: -10px;
+}
+
+/* line 99, ../scss/screen.scss */
+#show-article9:checked ~ .page .main-list li .label-after9:after {
+  right: -10px;
+}
+
+/* line 100, ../scss/screen.scss */
+#show-article10:checked ~ .page .main-list li .label-after10:after {
+  right: -10px;
+}
+
+/* line 101, ../scss/screen.scss */
+#show-article11:checked ~ .page .main-list li .label-after11:after {
+  right: -10px;
+}
+
+/*---- // Page Sidebar ----*/
+/*----- Page Content -----*/
+/* line 108, ../scss/screen.scss */
+.page-content {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+}
+
+/*----- // Page Content -----*/
+/* line 116, ../scss/screen.scss */
+.page-content .article {
+  padding-top: 40px;
+}
+
+/*---- Home Icon----*/
+/* line 127, ../scss/screen.scss */
+.icon-home {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+/* line 132, ../scss/screen.scss */
+.icon-home:before, .icon-home:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 50%;
+}
+/* line 138, ../scss/screen.scss */
+.icon-home:before {
+  width: 80%;
+  top: 50%;
+  left: 10%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #323232), color-stop(40%, #323232), color-stop(41%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, right top, color-stop(0%, #323232), color-stop(26%, #323232), color-stop(29%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(71%, rgba(255, 255, 255, 0)), color-stop(74%, #323232), color-stop(100%, #323232));
+}
+/* line 158, ../scss/screen.scss */
+.icon-home:after {
+  top: -35%;
+  left: 7%;
+  height: 80%;
+  width: 90%;
+  border: 21px solid transparent;
+  border-bottom-color: #333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*---- Home Icon----*/
+/*---- Search Icon ----*/
+/* line 176, ../scss/screen.scss */
+.icon-search {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+/* line 181, ../scss/screen.scss */
+.icon-search:before, .icon-search:after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+/* line 186, ../scss/screen.scss */
+.icon-search:before {
+  width: 60%;
+  height: 60%;
+  top: 10%;
+  left: 10%;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 6px #333;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 197, ../scss/screen.scss */
+.icon-search:after {
+  background-color: #333;
+  width: 1%;
+  height: 38%;
+  top: 52%;
+  left: 65%;
+  border: 4px solid #333;
+  border-top: 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*---- //Search Icon----*/
+/*---- Edit icon ----*/
+/* line 216, ../scss/screen.scss */
+.icon-edit {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+/* line 221, ../scss/screen.scss */
+.icon-edit:before, .icon-edit:after {
+  position: absolute;
+  display: block;
+  content: '';
+}
+/* line 226, ../scss/screen.scss */
+.icon-edit:before {
+  width: 60%;
+  height: 20%;
+  top: 32%;
+  left: 30%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(75%, #333333), color-stop(76%, transparent), color-stop(81%, transparent), color-stop(81%, #333333));
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 237, ../scss/screen.scss */
+.icon-edit:after {
+  width: 25%;
+  height: 25%;
+  top: 60%;
+  left: 15%;
+  border: 6px solid transparent;
+  border-top-color: #333;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*---- //Edit icon ----*/
+/*---- Menu Icon ----*/
+/* line 254, ../scss/screen.scss */
+.icon-menu {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+/* line 259, ../scss/screen.scss */
+.icon-menu:before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: #333;
+  width: 70%;
+  height: 10%;
+  border-radius: 5px;
+  top: 20%;
+  left: 15%;
+  box-shadow: 0 10px 0 0 #333, 0 20px 0 0 #333;
+}
+
+/*---- //Menu Icon ----*/
+/*---- Like Icon ----*/
+/* line 276, ../scss/screen.scss */
+.icon-like {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+/* line 281, ../scss/screen.scss */
+.icon-like:before, .icon-like:after {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 64%;
+  background: #2C2C2C;
+  border-radius: 20px 20px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  top: 17%;
+}
+/* line 293, ../scss/screen.scss */
+.icon-like:after {
+  left: 12%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/*---- //Like Icon ----*/
+/*---- Delete Icon ----*/
+/* line 305, ../scss/screen.scss */
+.icon-delete {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+/* line 310, ../scss/screen.scss */
+.icon-delete:before, .icon-delete:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+}
+/* line 315, ../scss/screen.scss */
+.icon-delete:before {
+  width: 60%;
+  height: 60%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #333333), color-stop(20%, #333333), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #333333), color-stop(60%, #333333), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #333333), color-stop(100%, #333333)), -webkit-gradient(linear, left bottom, left top, color-stop(0%, #333333), color-stop(25%, #333333), color-stop(25%, transparent), color-stop(25%, transparent));
+  top: 20%;
+  left: 20%;
+  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+}
+/* line 337, ../scss/screen.scss */
+.icon-delete:after {
+  height: 25%;
+  width: 60%;
+  top: -10%;
+  left: 20%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #333333), color-stop(50%, #333333), color-stop(50%, transparent), color-stop(100%, transparent)), -webkit-gradient(linear, left top, right top, color-stop(0%, transparent), color-stop(25%, transparent), color-stop(25%, #333333), color-stop(75%, #333333), color-stop(75%, transparent), color-stop(100%, transparent));
+}
+
+/*---- //Delete Icon ----*/
+/*---- Setting Icon ----*/
+/* line 359, ../scss/screen.scss */
+.icon-setting {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+/* line 364, ../scss/screen.scss */
+.icon-setting:after, .icon-setting:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+}
+/* line 369, ../scss/screen.scss */
+.icon-setting:after {
+  width: 50%;
+  height: 50%;
+  border: 2px dashed #333;
+  border-radius: 50%;
+  top: 25%;
+  left: 10%;
+  -webkit-box-shadow: inset 0 0 0 4px #333;
+  box-shadow: inset 0 0 0 4px #333;
+}
+/* line 379, ../scss/screen.scss */
+.icon-setting:before {
+  top: 10%;
+  left: 60%;
+  width: 30%;
+  height: 30%;
+  border: 1px dashed #333;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 0 3px #333;
+  box-shadow: inset 0 0 0 3px #333;
+}
+
+/*---- //Setting Icon ----*/
+/*---- Location Icon ----*/
+/* line 395, ../scss/screen.scss */
+.icon-location {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+/* line 400, ../scss/screen.scss */
+.icon-location:before, .icon-location:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+/* line 405, ../scss/screen.scss */
+.icon-location:before {
+  width: 30%;
+  height: 30%;
+  top: 2%;
+  left: 25%;
+  background-color: transparent;
+  border: 5px solid #333;
+  border-radius: 50%;
+}
+/* line 414, ../scss/screen.scss */
+.icon-location:after {
+  width: 20%;
+  height: 40%;
+  top: 45%;
+  left: 30%;
+  border: 0px solid transparent;
+  border-top-color: #333;
+  border-width: 25px 10px 25px 10px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*---- //Location icon ----*/
+/*---- Play icon ----*/
+/* line 433, ../scss/screen.scss */
+.icon-play {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+/* line 438, ../scss/screen.scss */
+.icon-play:before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 30%;
+  border: 20px solid transparent;
+  display: block;
+  border-left-color: #333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*---- //Play icon ----*/
+/*---- Lock icon ----*/
+/* line 457, ../scss/screen.scss */
+.icon-lock {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+/* line 462, ../scss/screen.scss */
+.icon-lock:before, .icon-lock:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 5%;
+}
+/* line 468, ../scss/screen.scss */
+.icon-lock:before {
+  left: 28%;
+  height: 20%;
+  width: 24%;
+  border: 5px solid #333;
+  border-bottom: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+/* line 477, ../scss/screen.scss */
+.icon-lock:after {
+  height: 50%;
+  width: 70%;
+  background-color: #333;
+  top: 35%;
+  left: 15%;
+  border-radius: 15%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(25%, #333333), color-stop(26%, transparent), color-stop(30%, transparent), color-stop(30%, #333333), color-stop(50%, #333333), color-stop(51%, transparent), color-stop(55%, transparent), color-stop(55%, #333333), color-stop(30%, #333333));
+}
+
+/*---- //Lock icon ----*/
+/*---- Share icon ----*/
+/* line 498, ../scss/screen.scss */
+.icon-share {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+/* line 503, ../scss/screen.scss */
+.icon-share:after, .icon-share:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 25%;
+}
+/* line 510, ../scss/screen.scss */
+.icon-share:after {
+  left: 40%;
+  height: 50%;
+  width: 50%;
+  box-shadow: inset 3px 3px 0 0 #333;
+  transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 519, ../scss/screen.scss */
+.icon-share:before {
+  top: 13%;
+  left: 55%;
+  height: 20%;
+  width: 20%;
+  background-color: #333;
+  border-radius: 100%;
+  box-shadow: -13px 13px 0 0 #333, 0px 26px 0 0 #333;
+}
